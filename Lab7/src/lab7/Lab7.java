@@ -23,8 +23,8 @@ public class Lab7 {
         double num = in.nextDouble();
         in.close();
         if(num == 1){
-        Triangle tr = new Triangle();
         double a = 3, b = 4, c = 5;
+        Triangle tr = new Triangle(a, b, c);
         System.out.println("A = " + a + " B = " + b + " C = " + c);
         double result1 = tr.Perimetr(a, b, c);
         double result2 = tr.Square(a, b, c);
@@ -33,11 +33,11 @@ public class Lab7 {
         }
         
         else if (num == 2){
-        Square sq = new Square();
         double a = 5;
+        Square sq = new Square(a);
         System.out.println("A: " + a);
-        double result1 = sq.Perimetr(a);
-        double result2 = sq.Square(a);
+        double result1 = sq.Perimetr();
+        double result2 = sq.Square();
         System.out.println("Perimetr: " + result1);
         System.out.println("Squarae: " + result2);
         }
