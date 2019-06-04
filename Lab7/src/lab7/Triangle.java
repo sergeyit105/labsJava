@@ -10,15 +10,18 @@ package lab7;
  * @author Сергей
  */
 public class Triangle implements Figure{
+     double a = 0;
+     double b = 0;
+     double c = 0;     
           public Triangle(){
       }
-  
-    public double Perimetr(double a, double b, double c){
+    @Override
+    public double Perimetr(){
     double result = a + b + c;
     return result;
     }
-    
-    public double Square(double a, double b, double c){
+    @Override
+    public double Square(){
     double p = (a + b + c)/2;
     double result = p * (p - a) * (p - b) * (p - c);
     return result;
