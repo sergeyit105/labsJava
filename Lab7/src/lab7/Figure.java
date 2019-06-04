@@ -10,6 +10,6 @@ package lab7;
  * @author Сергей
  */
 public interface Figure {
-    public void Perimetr();
-    public void Square();
+    public double Perimetr();
+    public double Square();
 }
