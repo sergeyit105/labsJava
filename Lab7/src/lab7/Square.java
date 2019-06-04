@@ -10,13 +10,14 @@ package lab7;
  * @author Сергей
  */
 class Square implements Figure{
-
-  public double Perimetr(double a){
+double a = 0;
+  @Override
+  public double Perimetr(){
     double result = 4 * a;
     return result;
   }
-  
-  public double Square(double a){
+  @Override
+  public double Square(){
     double result = a * a;
     return result;
   }
